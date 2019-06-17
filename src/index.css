@@ -1,0 +1,18 @@
+html, body {
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    width: inherit;
+    height: inherit;
+}
+
+
+.leaflet-container {
+    width: 70%;
+    height: 300px;
+    margin: 10px auto;
+}
