@@ -178,7 +178,7 @@ export default class StoreList extends React.Component{
               : this.props.err?
               <p>データを取得できませんでした</p>
               :
-              <p>準備中</p>
+              <p>現在地の取得中</p>
 
     return(
       <div>

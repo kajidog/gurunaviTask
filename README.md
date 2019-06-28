@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+簡易仕様書
 
-## Available Scripts
+作者：梶原健成
 
-In the project directory, you can run:
+アプリ名：ごちナビ
+url:https://mapofrestaulant.firebaseapp.com
+git:https://github.com/KajiwaraKensei/gurunaviTask
 
-### `npm start`
+＜開発環境＞
+・Windows 10
+・Atom
+・node -v 10.15.3
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+＜開発言語＞
+JavaScript
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+＜機能一覧＞
+・レストラン検索：ぐるなびAPIを使用して、現在地周辺の飲食店を検索する。
+・レストラン情報取得 ：ぐるなびAPIを使用して、飲食店の詳細情報を取得する。
 
-### `npm test`
+＜画面一覧＞
+・画面名   ：画面概要
+・検索画面 ：条件を指定してレストランを検索する。
+・一覧画面 ：検索結果の飲食店を一覧表示する。
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+＜使用しているAPI,SDKなど＞
+・ぐるなびAPI
 
-### `npm run build`
+＜フレームワーク＞
+react@16.8.6
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+＜コンセプト＞
+・今日のお店はいつもと違う
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+＜こだわったポイント＞
+・検索したときは最低限必要な情報だけを見して、クリックしたときにほかの情報を見せるようにしました。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+＜アドバイスして欲しいポイント＞
+・アニメーションの実装をしたい
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+＜今後実装すべき機能＞
+・データベースと連携して、店舗のレビューや評価を投稿する機能。
+・他と差別化できる機能。
