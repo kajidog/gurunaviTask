@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 #root {
@@ -12,7 +13,7 @@ html, body {
 
 
 .leaflet-container {
-    width: 70%;
-    height: 300px;
-    margin: 10px auto;
+    width: 80%;
+    height: 90%;
+    margin: auto;
 }

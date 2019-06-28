@@ -3,9 +3,12 @@ import Map from '../components/Map'
 import {getCurrentLocation} from '../actions/Map'
 
 const mapStateToProps = (state) =>({
+  display:state.display.map,
+
   latlng:state.events.latlng,
   hasLocation:state.events.hasLocation,
-  response:state.events.response
+  response:state.events.response,
+  clickShop:state.events.clickShop,
 
 });
 

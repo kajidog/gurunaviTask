@@ -6,7 +6,8 @@ const initialState = {
   },
   value:1,
   range:1,
-  response:{}
+  response:{},
+  clickShop:null,
 }
 
 export default (state = initialState, action) =>{
@@ -19,11 +20,10 @@ export default (state = initialState, action) =>{
         lng:action.payload.lng,
       },
     }
-    case 'RECEIVE_DATA':
+    case 'CLICKSHOP':
     return{
       ...state,
-      response:action.name,
-      hasLocation: true,
+      clickShop:action.payload.info,
     }
     default:
     return state;

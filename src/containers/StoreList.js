@@ -1,14 +1,25 @@
 import {connect} from 'react-redux';
-import SroreList from '../components/SroreList'
-import {ChangePage} from '../actions/Map'
+import SroreList from '../components/StoreList'
+import {RestGet, ClickShop} from '../actions/Map'
+import {Information, Map} from '../actions/display'
+
 const mapStateToProps = (state) =>({
-  response:state.events.response,
-  range:state.events.range,
+  display:state.display.list,
+  expansion:state.display.expansion,
+  response:state.rest.response,
+  comunication:state.rest.comunication,
+  perPge:state.rest.perPge,
+  url:state.rest.add,
+  err:state.rest.err,
 });
 
 const mapDispatchToProps =(dispatch)=>{
   return{
-    ChangePage: (index, range=1)=>dispatch(ChangePage(index, range))
+    ChangePage: (index, add, mode)=>dispatch(RestGet(index, add, mode)),
+    ClickShop:(name, lat, lng)=>dispatch(ClickShop(name, lat, lng)),
+    Information:(data)=>dispatch(Information(data)),
+    Map:()=>dispatch(Map()),
+
   }
 }
 
