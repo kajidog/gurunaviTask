@@ -21,8 +21,8 @@ export default class StoreList extends React.Component{
   //スクロールの監視
   scrollEvent = (e) => {
     const currentPosition = this.node.scrollHeight-this.node.clientHeight-this.node.scrollTop;
-    if(currentPosition < 40){
-      //高さが40以下で次のデータを持ってくる
+    if(currentPosition < 100){
+      //高さが100以下で次のデータを持ってくる
       if(!this.props.comunication){
         const a = this.props.response.length-1;
         if(this.props.response[a].hit_per_page * this.props.response[a].page_offset < this.props.response[a].total_hit_count){
@@ -182,6 +182,10 @@ export default class StoreList extends React.Component{
           <div style={{borderTop:"1px solid rgb(148, 148, 148)",height:`${this.state.height}`}}>
             <Lists onScroll={this.scrollEvent}ref={(node) => this.node = node}>
               <h2>周辺の飲食店一覧</h2>
+              <a style={{float:"right"}} href="https://api.gnavi.co.jp/api/scope/" rel="noopener noreferrer">
+                <img src="https://api.gnavi.co.jp/api/img/credit/api_90_35.gif"style={{width:"90",height:"35",border:"0"}} alt="グルメ情報検索サイト　ぐるなび" />
+              </a>
+
               {HitPage}
             </Lists>
           </div>
