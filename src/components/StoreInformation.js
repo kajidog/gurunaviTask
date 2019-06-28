@@ -1,5 +1,5 @@
 import React from 'react'
-import {Table, Td, Th, Img} from '../style/StoreInformation'
+import {Table, Td, Th} from '../style/StoreInformation'
 
 export default class StoreInformation extends React.Component {
   constructor(props){
@@ -13,7 +13,6 @@ export default class StoreInformation extends React.Component {
   }
 
   render(){
-
     //空かどうかの判定をする
     const EmptyString =(word, Mark, style, lavel="")=>{
       if(word !== ""){
@@ -56,13 +55,11 @@ export default class StoreInformation extends React.Component {
       }
     }
 
-    
+
     const Data =(info)=>(
       <div style={{ border:"solid 1px black", padding:"10px"}}>
       <button onClick={this.back}>戻る</button>
-        <Img url={info.image_url.shop_image1}>
         <h2 style={{}}>{info.name}</h2>
-        </Img>
         {EmptyString(info.pr.pr_long, "p", {color:"red"})}
 
         <Table style={{border:"solid 1px", padding:"10px"}}>
