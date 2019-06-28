@@ -60,6 +60,20 @@ export default class StoreInformation extends React.Component {
       <div style={{ border:"solid 1px black", padding:"10px"}}>
       <button onClick={this.back}>戻る</button>
         <h2 style={{}}>{info.name}</h2>
+        <div style={{display:"flex",flexWrap:"wrap"}}>
+        {
+          info.image_url.shop_image1 !== ""?
+          <img style={{margin:"10px",height:"400px"}} src={info.image_url.shop_image1} alt="店舗画像1" />
+          :
+          null
+        }
+        {
+          info.image_url.shop_image2 !== ""?
+          <img style={{margin:"10px",height:"400px"}} src={info.image_url.shop_image2} alt="店舗画像2" />
+          :
+          null
+        }
+        </div>
         {EmptyString(info.pr.pr_long, "p", {color:"red"})}
 
         <Table style={{border:"solid 1px", padding:"10px"}}>
